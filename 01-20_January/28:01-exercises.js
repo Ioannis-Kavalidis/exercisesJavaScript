@@ -568,3 +568,4 @@ console.log(decimalPlacesOfPi(5));
 
 const characterValue = letter => letter.toLowerCase().charCodeAt(0) - 96;
 console.log(characterValue("W"));
+console.log(characterValue("a"));
