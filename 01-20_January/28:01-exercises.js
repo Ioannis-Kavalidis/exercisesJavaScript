@@ -569,3 +569,52 @@ console.log(decimalPlacesOfPi(5));
 const characterValue = letter => letter.toLowerCase().charCodeAt(0) - 96;
 console.log(characterValue("W"));
 console.log(characterValue("a"));
+
+let a = [1, 2, 3, 4, 5, 6];
+
+// let sum = 0;
+// for (let i = 0; i < a.length; i++) {
+//   sum += a[i];
+// }
+
+// for (let n of a) {
+//   sum += n;
+// }
+
+const sum = a.reduce((acc, curr) => acc + curr);
+console.log(sum);
+
+// Create a function will calculate how many times empty space occurred in a given string by the user and print out only the characters number
+function emptySpace(letter, text) {
+  let smallLetters = letter.toLowerCase().split(text).length - 1;
+  return smallLetters;
+}
+console.log(emptySpace("I-am-a-new-boy-in-class", "-"));
+
+// Validate Email. Create a function that takes a string, checks if it’s a valid email address, and then accordingly returns either true or false.
+// The string must contain an “@” character.
+// The string must contain a “.” character.
+// The “@” must have at least one character in front of it.
+// e.g. “john@example.com” is valid while “@example.com” is invalid.
+// The “.” and the “@” must be in the appropriate places.
+// e.g. “john.smith@com” is invalid while “john.smith@email.com” is valid.
+
+const email1 = address => {
+  let thirdToLast = address.substring(address.length - 4);
+  let secondToLast = address.substring(address.length - 3);
+
+  if (
+    address.includes("@") &&
+    address.includes(".") &&
+    "@" != address[0] &&
+    "." != address[0] &&
+    (thirdToLast || secondToLast === ".")
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(email1("johnsmith@email.com"));
+console.log(email1("johnsmith@emailcom"));
+console.log(email1("@email.com"));
