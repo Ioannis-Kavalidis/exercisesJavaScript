@@ -449,28 +449,6 @@ console.log(result("John", 3000));
 // }
 // console.log(isNumber("Once upon 01758223462"));
 
-// function phoneNumber(num) {
-//   let strToArray = num.split("");
-//   let array = [];
-//   for (let i = 0; i < strToArray.length; i++) {
-//     let prefixNumber1 = 030;
-//     let prefixNumber2 = 017;
-//     let firstNumbers = num.substring(0, 3);
-//     let restNumbers = num.substring(3, num.length);
-
-//     if (prefixNumber1 == firstNumbers && restNumbers.length == 9) {
-//       return `Your number is ${prefixNumber1}${restNumbers}`;
-//     } else if (prefixNumber2 == firstNumbers && restNumbers.length == 9) {
-//       return `Your number is ${prefixNumber2}${restNumbers}`;
-//     } else {
-//       return `False number dialed`;
-//     }
-//   }
-
-//   let result = strToArray.join("");
-//   return result;
-// }
-
 // Write a function that checks whether the user has entered a valid German bank account.
 // Note: German bank accounts should starts with and has 20 number.
 // DExxxxxxxxxxxxxxxxxxxx
