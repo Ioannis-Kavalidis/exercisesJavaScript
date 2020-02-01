@@ -25,75 +25,33 @@ console.log(age(2021));
 
 // Create a function that accepts a text from user and check if the user has entered a month name, if so print out that month and in which season it is.
 
-// function monthName(text) {
-//   let array = [];
-//   let smallLetterText = text.toLowerCase();
-//   let months = [
-//     January,
-//     February,
-//     March,
-//     April,
-//     May,
-//     June,
-//     July,
-//     August,
-//     September,
-//     October,
-//     November,
-//     December
-//   ];
-//   array.push(months[i]);
-//   let smallLetterMonths = months.toLowerCase();
-//   let winter = [winter, spring, summer, autumn];
+function monthName(text) {
+  let array = [];
+  let smallLetterText = text.toLowerCase();
+  let months = [
+    January,
+    February,
+    March,
+    April,
+    May,
+    June,
+    July,
+    August,
+    September,
+    October,
+    November,
+    December
+  ];
+  array.push(months[i]);
+  let smallLetterMonths = months.toLowerCase();
+  let winter = [winter, spring, summer, autumn];
 
-//   if (smallLetterText == smallLetterMonths) {
-//     return `${text} is a month in the winter season`;
-//   } else {
-//   }
-// }
-// console.log(monthName("June"));
-
-// let month = "July";
-// switch (month) {
-//   case "January":
-//     console.log("January is a month in the winter season");
-//     break;
-//   case "February":
-//     console.log("February is a month in the winter season");
-//     break;
-//   case "March":
-//     console.log("March is a month in the spring season");
-//     break;
-//   case "April":
-//     console.log("April is a month in the spring season");
-//     break;
-//   case "May":
-//     console.log("May is a month in the spring season");
-//     break;
-//   case "June":
-//     console.log("June is a month in the summer season");
-//     break;
-//   case "July":
-//     console.log("July is a month in the summer season");
-//     break;
-//   case "August":
-//     console.log("August is a month in the summer season");
-//     break;
-//   case "September":
-//     console.log("September is a month in the autumn season");
-//     break;
-//   case "October":
-//     console.log("October is a month in the autumn season");
-//     break;
-//   case "November":
-//     console.log("November is a month in the autumn season");
-//     break;
-//   case "December":
-//     console.log("December is a month in the winter season");
-//     break;
-//   default:
-//     console.log("Not a month");
-// }
+  if (smallLetterText == smallLetterMonths) {
+    return `${text} is a month in the winter season`;
+  } else {
+  }
+}
+console.log(monthName("June"));
 
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // dictionary("bu", "button") ➞ true
