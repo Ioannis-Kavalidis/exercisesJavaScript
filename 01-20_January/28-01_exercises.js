@@ -20,7 +20,6 @@ const age = num => {
     return `Not a valid date`;
   }
 };
-
 console.log(age(2021));
 
 // Create a function that accepts a text from user and check if the user has entered a month name, if so print out that month and in which season it is.
