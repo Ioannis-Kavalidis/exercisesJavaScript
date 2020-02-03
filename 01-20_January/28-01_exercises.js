@@ -20,80 +20,37 @@ const age = num => {
     return `Not a valid date`;
   }
 };
-
 console.log(age(2021));
 
 // Create a function that accepts a text from user and check if the user has entered a month name, if so print out that month and in which season it is.
 
-// function monthName(text) {
-//   let array = [];
-//   let smallLetterText = text.toLowerCase();
-//   let months = [
-//     January,
-//     February,
-//     March,
-//     April,
-//     May,
-//     June,
-//     July,
-//     August,
-//     September,
-//     October,
-//     November,
-//     December
-//   ];
-//   array.push(months[i]);
-//   let smallLetterMonths = months.toLowerCase();
-//   let winter = [winter, spring, summer, autumn];
+function monthName(text) {
+  let array = [];
+  let smallLetterText = text.toLowerCase();
+  let months = [
+    January,
+    February,
+    March,
+    April,
+    May,
+    June,
+    July,
+    August,
+    September,
+    October,
+    November,
+    December
+  ];
+  array.push(months[i]);
+  let smallLetterMonths = months.toLowerCase();
+  let winter = [winter, spring, summer, autumn];
 
-//   if (smallLetterText == smallLetterMonths) {
-//     return `${text} is a month in the winter season`;
-//   } else {
-//   }
-// }
-// console.log(monthName("June"));
-
-// let month = "July";
-// switch (month) {
-//   case "January":
-//     console.log("January is a month in the winter season");
-//     break;
-//   case "February":
-//     console.log("February is a month in the winter season");
-//     break;
-//   case "March":
-//     console.log("March is a month in the spring season");
-//     break;
-//   case "April":
-//     console.log("April is a month in the spring season");
-//     break;
-//   case "May":
-//     console.log("May is a month in the spring season");
-//     break;
-//   case "June":
-//     console.log("June is a month in the summer season");
-//     break;
-//   case "July":
-//     console.log("July is a month in the summer season");
-//     break;
-//   case "August":
-//     console.log("August is a month in the summer season");
-//     break;
-//   case "September":
-//     console.log("September is a month in the autumn season");
-//     break;
-//   case "October":
-//     console.log("October is a month in the autumn season");
-//     break;
-//   case "November":
-//     console.log("November is a month in the autumn season");
-//     break;
-//   case "December":
-//     console.log("December is a month in the winter season");
-//     break;
-//   default:
-//     console.log("Not a month");
-// }
+  if (smallLetterText == smallLetterMonths) {
+    return `${text} is a month in the winter season`;
+  } else {
+  }
+}
+console.log(monthName("June"));
 
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // dictionary("bu", "button") ➞ true
@@ -448,28 +405,6 @@ console.log(result("John", 3000));
 //   }
 // }
 // console.log(isNumber("Once upon 01758223462"));
-
-// function phoneNumber(num) {
-//   let strToArray = num.split("");
-//   let array = [];
-//   for (let i = 0; i < strToArray.length; i++) {
-//     let prefixNumber1 = 030;
-//     let prefixNumber2 = 017;
-//     let firstNumbers = num.substring(0, 3);
-//     let restNumbers = num.substring(3, num.length);
-
-//     if (prefixNumber1 == firstNumbers && restNumbers.length == 9) {
-//       return `Your number is ${prefixNumber1}${restNumbers}`;
-//     } else if (prefixNumber2 == firstNumbers && restNumbers.length == 9) {
-//       return `Your number is ${prefixNumber2}${restNumbers}`;
-//     } else {
-//       return `False number dialed`;
-//     }
-//   }
-
-//   let result = strToArray.join("");
-//   return result;
-// }
 
 // Write a function that checks whether the user has entered a valid German bank account.
 // Note: German bank accounts should starts with and has 20 number.
